@@ -1,0 +1,59 @@
+body {
+  background-color: ghostwhite;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+.container {
+  width: 400px;
+  margin: 0px auto;
+  background-color: #a39d9d;
+  box-shadow: 0px 5px 20px ;
+
+
+}
+
+.container:hover .card-img img{
+  width: 160%;
+  filter: grayscale(0);
+}
+
+.card-img {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);
+
+  transition-property: filter width;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.container {
+  text-align: center;
+ /* padding: 4px 10px; */
+  box-sizing: border-box; 
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: blue;
+}
+
+.card-excerpt {
+  color: #777;
+}
+
